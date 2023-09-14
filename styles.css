@@ -1,2 +1,37 @@
 
 /* Your CSS Code here. */
+/* Reset some default styles for the body and HTML */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the holder */
+.holder {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  flex-wrap: wrap; /* Wrap items onto a new row when necessary */
+  padding: 10px; /* Add padding to the holder */
+}
+
+/* Style for the individual items */
+.item {
+  width: calc(33.33% - 10px); /* Adjust the width of each item */
+  background-color: #f2f2f2; /* Add a background color for visual separation */
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px; /* Add margin to create space between items vertically */
+  box-sizing: border-box; /* Include padding and border in the item's width */
+}
+
+/* Additional styles for specific items if needed */
+.item-1 {
+  background-color: #ff5733; /* Customize the background color for item-1 */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .item {
+    width: calc(50% - 10px); /* Adjust the width for smaller screens */
+  }
+}
